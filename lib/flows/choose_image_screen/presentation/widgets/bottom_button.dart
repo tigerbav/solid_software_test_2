@@ -5,7 +5,9 @@ import 'package:solid_software_test/common/widgets/primary_button.dart';
 import 'package:solid_software_test/flows/choose_image_screen/presentation/logic/choose_image_cubit.dart';
 import 'package:solid_software_test/generated/locale_keys.g.dart';
 
+/// define widget for [Scaffold.bottomNavigationBar]
 class BottomButton extends StatelessWidget {
+  /// constructor
   const BottomButton({super.key});
 
   @override

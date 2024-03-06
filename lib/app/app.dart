@@ -2,7 +2,9 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:solid_software_test/services/navigation/app_router.dart';
 
+/// widget for setting localization properties and MaterialApp
 class App extends StatelessWidget {
+  /// constructor
   const App({super.key});
 
   @override

@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:solid_software_test/common/app_colors.dart';
 import 'package:solid_software_test/generated/locale_keys.g.dart';
 
+/// class of extra options for UI
 class Utils {
+  /// open dialog foreground
   static Future<dynamic> openDialog(
     BuildContext context,
     Widget child,
@@ -15,6 +17,7 @@ class Utils {
     );
   }
 
+  /// show snack bar
   static void showSnackBar(BuildContext context, String? message) {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(

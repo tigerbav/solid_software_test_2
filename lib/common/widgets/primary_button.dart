@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:solid_software_test/common/app_colors.dart';
 
+/// primary button for app
 class PrimaryButton extends StatelessWidget {
+  /// constructor
   const PrimaryButton({
     super.key,
     required this.onTap,

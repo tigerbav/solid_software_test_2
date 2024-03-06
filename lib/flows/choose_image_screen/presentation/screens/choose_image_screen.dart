@@ -1,5 +1,4 @@
 import 'package:auto_route/annotations.dart';
-import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:solid_software_test/common/utils/utils.dart';
@@ -7,10 +6,12 @@ import 'package:solid_software_test/flows/choose_image_screen/presentation/logic
 import 'package:solid_software_test/flows/choose_image_screen/presentation/widgets/bottom_button.dart';
 import 'package:solid_software_test/flows/choose_image_screen/presentation/widgets/image_view.dart';
 import 'package:solid_software_test/flows/choose_image_screen/presentation/widgets/percent_widget.dart';
-import 'package:solid_software_test/generated/locale_keys.g.dart';
 
 @RoutePage()
+
+/// the only one screen
 class ChooseImageScreen extends StatelessWidget {
+  /// constructor
   const ChooseImageScreen({super.key});
 
   @override

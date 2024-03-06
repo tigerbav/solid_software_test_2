@@ -4,7 +4,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:solid_software_test/flows/choose_image_screen/presentation/logic/choose_image_cubit.dart';
 import 'package:solid_software_test/generated/locale_keys.g.dart';
 
+/// widget for showing how difference are images in percent
 class PercentWidget extends StatelessWidget {
+  /// constructor
   const PercentWidget({super.key});
 
   @override
@@ -15,7 +17,7 @@ class PercentWidget extends StatelessWidget {
         if (state.comparePercent == null) return const SizedBox(height: 20);
 
         return Text(
-          '${state.comparePercent!.toStringAsFixed(2)}${LocaleKeys.similarity.tr()}',
+          state.comparePercent!.toStringAsFixed(2) + LocaleKeys.similarity.tr(),
         );
       },
     );

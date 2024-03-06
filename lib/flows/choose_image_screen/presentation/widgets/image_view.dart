@@ -7,7 +7,9 @@ import 'package:solid_software_test/flows/choose_image_screen/presentation/enums
 import 'package:solid_software_test/flows/choose_image_screen/presentation/logic/choose_image_cubit.dart';
 import 'package:solid_software_test/flows/choose_image_screen/presentation/widgets/image_resource_dialog.dart';
 
+/// widget for 2 images and definitions actions and UI
 class ImageView extends StatelessWidget {
+  /// constructor
   const ImageView({super.key});
 
   @override
@@ -20,7 +22,7 @@ class ImageView extends StatelessWidget {
     final widgets = List.generate(
       types.length * 2 - 1,
       (index) {
-        if (index % 2 == 0) {
+        if (index.isEven) {
           return Expanded(
             child: _Item(
               imageType: types[index ~/ 2],
@@ -66,7 +68,7 @@ class _Item extends StatelessWidget {
                   const ImageResourceDialog(),
                 );
                 if (result == null || result is! ImageSource) return;
-                imageType.setImage(cubit, result);
+                await imageType.setImage(cubit, result);
               },
               child: Container(
                 height: height,

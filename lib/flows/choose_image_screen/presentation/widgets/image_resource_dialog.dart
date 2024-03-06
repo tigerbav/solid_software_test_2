@@ -4,7 +4,9 @@ import 'package:image_picker/image_picker.dart';
 import 'package:solid_software_test/common/app_colors.dart';
 import 'package:solid_software_test/common/utils/extensions/image_source.dart';
 
+/// call this widget to define way for selection image
 class ImageResourceDialog extends StatelessWidget {
+  /// constructor
   const ImageResourceDialog({super.key});
 
   @override

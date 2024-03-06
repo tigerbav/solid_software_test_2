@@ -2,10 +2,12 @@ import 'dart:io';
 import 'dart:math';
 
 import 'package:flutter/services.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:image/image.dart' as img;
+import 'package:image_picker/image_picker.dart';
 
+/// class, which contains all necessary methods with images
 class ImageAppProvider {
+  /// get image
   static Future<File?> getImage(ImageSource source) async {
     final image = await ImagePicker().pickImage(source: source);
     if (image == null) return null;
@@ -13,6 +15,7 @@ class ImageAppProvider {
     return File(image.path);
   }
 
+  /// compare two images from file
   static Future<double?> compareImages(
     File? firstFile,
     File? secondFile,
