@@ -24,11 +24,11 @@ dependencies:
   equatable: ^2.0.5
   image_picker: ^1.0.7
   image: ^4.1.7
+  solid_lints: 0.1.4
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
   auto_route_generator: ^7.3.2
   build_runner: ^2.4.8
 
