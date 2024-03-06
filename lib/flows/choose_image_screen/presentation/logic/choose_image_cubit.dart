@@ -13,16 +13,18 @@ class ChooseImageCubit extends Cubit<ChooseImageState> {
       : super(const ChooseImageState(status: ChooseImageStatus.initial));
 
   void setFirstImage(File image) {
-    emit(state.copyWith(
+    emit(ChooseImageState(
       status: ChooseImageStatus.idle,
       firstImage: image,
+      secondImage: state.secondImage,
       comparePercent: null,
     ));
   }
 
   void setSecondImage(File image) {
-    emit(state.copyWith(
+    emit(ChooseImageState(
       status: ChooseImageStatus.idle,
+      firstImage: state.firstImage,
       secondImage: image,
       comparePercent: null,
     ));
